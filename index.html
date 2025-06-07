@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedScope AI Health Screener</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">MEDSCOPE AI<br>HEALTH SCREENER</h1>
+
+    <!-- Condition Selector -->
+    <div class="form-group">
+        <label for="condition">Select Condition</label>
+        <select name="condition" id="condition">
+            <option value="diabetes">Diabetes</option>
+            <option value="hypertension">Hypertension</option>
+            <option value="ckd">Chronic Kidney Disease</option>
+        </select>
+    </div>
+
+    <!-- Coming Soon Message -->
+    <div id="comingSoon" class="coming-soon">
+      This feature is coming soon!
+    </div>
+
+    <!-- Diabetes Form -->
+    <form id="healthForm">
+      <div id="diabetesForm">
+        <div class="form-group">
+          <label for="BMI">BMI</label>
+          <input type="range" id="BMI" name="BMI" min="10" max="50" value="24" oninput="bmiValue.value = this.value"/>
+          <output id="bmiValue">24</output>
+        </div>
+        <div class="form-group">
+          <label for="Age">Age</label>
+          <input type="number" id="Age" name="Age" min="1" max="100" value="32"/>
+        </div>
+        <div class="form-group">
+          <label for="HighBP">Blood Pressure</label>
+          <select id="HighBP" name="HighBP">
+            <option value="0">Normal</option>
+            <option value="1">High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Smoker">Smoking Status</label>
+          <select id="Smoker" name="Smoker">
+            <option value="0">Never</option>
+            <option value="1">Current/Former</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="HighChol">High Cholesterol</label>
+          <select id="HighChol" name="HighChol">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Stroke">History of Stroke</label>
+          <select id="Stroke" name="Stroke">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="HeartDiseaseorAttack">Heart Disease/Attack</label>
+          <select id="HeartDiseaseorAttack" name="HeartDiseaseorAttack">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="PhysActivity">Physical Activity</label>
+          <select id="PhysActivity" name="PhysActivity">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Fruits">Eats Fruits Regularly</label>
+          <select id="Fruits" name="Fruits">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Veggies">Eats Vegetables Regularly</label>
+          <select id="Veggies" name="Veggies">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="HvyAlcoholConsump">Heavy Alcohol Consumption</label>
+          <select id="HvyAlcoholConsump" name="HvyAlcoholConsump">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Sex">Sex</label>
+          <select id="Sex" name="Sex">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+          </select>
+        </div>
+        <button id="submitBtn" type="submit" class="submit-btn">SUBMIT</button>
+      </div>
+    </form>
+
+    <div class="result" id="result">RISK LEVEL: <span id="risk">UNKNOWN</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+body {
+    background-color: hsl(240, 50%, 12%);
+    padding-top: 220px;
+    padding-bottom: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding-top: 20px;
+    text-align: center;
+    border: 2px solid #00f7ff;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #1c1c3c;
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+.coming-soon {
+    display: none;
+    font-weight: bold;
+    color: orange;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+input[type="range"] {
+    width: 60%;
+}
+
+input[type="number"], select {
+    background-color: #000c1a;
+    color: #00f7ff;
+    border: 1px solid #00f7ff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #0891b2;
+  transform: scale(1.03);
+}
+
+
+button {
+    background-color: transparent;
+    border: 2px solid #00f7ff;
+    padding: 10px 30px;
+    color: #00f7ff;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00f7ff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 24px;
+    text-shadow: 0 0 5px #00f7ff;
+}
+
+#risk {
+    font-weight: bold;
+    font-size: 30px;
+}
